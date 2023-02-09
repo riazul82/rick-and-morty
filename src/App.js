@@ -1,11 +1,22 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.scss';
+
+// pages
+import Home from './pages/Home';
+import Error404 from './pages/Error404';
+
+import ScrollToTop from './effects/ScrollToTop';
 
 const App = () => {
   return (
-    <div>
-      <h1 className='meaw'>The Rick & Morty Wiki</h1>
-    </div>
+    <BrowserRouter>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="*" element={<Error404/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
