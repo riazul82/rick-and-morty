@@ -1,0 +1,28 @@
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 999;
+
+    .arrowIcon {
+        color: $green;
+        font-size: 1.4rem;
+    }
+
+    .arrowLeft {
+        margin-right: 4px;
+    }
+
+    &:hover {
+        background: #fff;
+    }
+}
+
+.slick-prev::before, .slick-next::before {
+    display: none;
+}

@@ -1,8 +1,12 @@
 import React from 'react';
+
 import logo from '../assets/images/Logo.svg';
 import bubble from '../assets/images/bubble.svg';
 import portal from '../assets/images/portal.svg';
 import gun from '../assets/images/Gun.svg';
+
+import MeetTheCast from '../components/MeetTheCast';
+import List from '../components/List';
 
 const Home = () => {
     return (
@@ -45,6 +49,10 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+
+            <MeetTheCast />
+            <List title="Episodes" />
+            <List title="Locations" />
         </div>
     );
 }

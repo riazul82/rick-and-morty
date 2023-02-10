@@ -1,0 +1,32 @@
+.list {
+    margin: 0 auto;
+    width: 1420px;
+
+    .header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        .title {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        button {
+            padding: 10px 24px;
+            color: #fff;
+            font-size: 18px;
+            font-weight: normal;
+            border: 1px solid $green;
+            outline: none;
+            border-radius: 8px;
+            background: transparent;
+            cursor: pointer;
+        }
+    }
+
+    .sliderContent {
+        margin-top: 36px;
+    }
+}
