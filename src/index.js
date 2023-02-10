@@ -13,10 +13,13 @@ import './assets/fonts/TTTravels-Bold.ttf';
 import './assets/fonts/TTTravels-ExtraBold.ttf';
 import './assets/fonts/TTTravels-ExtraBoldItalic.ttf';
 import './assets/fonts/TTTravels-Black.ttf';
+import AppContextProvider from './context/AppContextProvider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <AppContextProvider>
+      <App />
+    </AppContextProvider>
   </React.StrictMode>
 );

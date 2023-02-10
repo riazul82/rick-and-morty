@@ -1,7 +1,6 @@
 import React from 'react';
-import ctr from '../assets/images/character.jpg';
 
-const Character = () => {
+const Character = ({ data }) => {
     return (
         <div className="characterBox">
             <svg width="290" height="296" viewBox="0 0 290 296" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -10,25 +9,25 @@ const Character = () => {
                 <path d="M289.622 239.672C289.622 243.752 287.5 247.537 284.02 249.666L211.713 293.9C209.873 295.026 207.757 295.622 205.6 295.622L12.0934 295.622C5.62308 295.622 0.37793 290.377 0.37793 283.907L0.37793 12.0933C0.37793 5.62308 5.62308 0.37793 12.0934 0.37793L277.907 0.37793C284.377 0.37793 289.622 5.62308 289.622 12.0933L289.622 239.672Z" stroke="url(#paint0_linear_23_19)" stroke-opacity="0.7" stroke-width="0.755833"/>
                 </g>
                 <defs>
-                <filter id="filter0_b_23_19" x="-7.55833" y="-7.55833" width="305.117" height="311.117" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <filter id="filter0_b_23_19" x="-7.55833" y="-7.55833" width="305.117" height="311.117" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                 <feGaussianBlur in="BackgroundImageFix" stdDeviation="3.77917"/>
                 <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_23_19"/>
                 <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_23_19" result="shape"/>
                 </filter>
                 <linearGradient id="paint0_linear_23_19" x1="-25.4789" y1="-10.2162" x2="159.097" y2="327.342" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#84F729"/>
-                <stop offset="1" stop-color="#15BFFD"/>
+                <stop stopColor="#84F729"/>
+                <stop offset="1" stopColor="#15BFFD"/>
                 </linearGradient>
                 </defs>
             </svg>
 
             <div className="characterBoxContent">
                 <div className="image">
-                    <img src={ctr} alt="ctr" />
+                    <img src={data.image} alt={data.name} />
                 </div>
                 <div className="text">
-                    <p>Jhon Doe</p>
+                    <p>{data.name}</p>
                 </div>
             </div>
         </div>

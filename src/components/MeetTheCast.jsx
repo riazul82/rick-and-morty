@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AppContext } from '../context/AppContextProvider';
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -8,6 +10,11 @@ import PrevBtn from './PrevBtn';
 import NextBtn from './NextBtn';
 
 const MeetTheCast = () => {
+    const { characters } = useContext(AppContext);
+
+    const charactersData = characters[0];
+    const loadingStatus = characters[1];
+
     const settings = {
         dots: false,
         infinite: false,
@@ -53,11 +60,12 @@ const MeetTheCast = () => {
             </div>
 
             <Slider {...settings} className="sliderContent">
-                <Character />
-                <Character />
-                <Character />
-                <Character />
-                <Character />
+                {
+                    !loadingStatus ?
+                    (charactersData && charactersData.map((data) => {
+                        return <Character data={data} />
+                    })) : <p>Loading...</p>
+                }
             </Slider>
         </div>
     );
