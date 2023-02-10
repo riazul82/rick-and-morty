@@ -1,8 +1,11 @@
 @import './assets/styles/utils/variables';
 @import './assets/styles/base/reset';
+@import './assets/styles/base/global';
 @import './assets/styles/base/typography';
-@import './assets/styles/utils/list';
+@import './assets/styles/utils/logo';
 @import './assets/styles/pages/home';
+@import './assets/styles/pages/cast';
+@import './assets/styles/components/list';
 @import './assets/styles/components/character';
 @import './assets/styles/components/list_card';
 @import './assets/styles/components/slider_btns';

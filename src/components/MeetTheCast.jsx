@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { AppContext } from '../context/AppContextProvider';
 
 import Slider from "react-slick";
@@ -11,6 +12,7 @@ import NextBtn from './NextBtn';
 
 const MeetTheCast = () => {
     const { characters } = useContext(AppContext);
+    const navigate = useNavigate();
 
     const charactersData = characters[0];
     const loadingStatus = characters[1];
@@ -52,19 +54,25 @@ const MeetTheCast = () => {
         ]
     };
 
+    const handleBtnClick = () => {
+        navigate('/cast');
+    }
+
     return (
         <div className="list" style={{marginTop: '100px'}}>
             <div className="header">
                 <p className="title">Meet the cast</p>
-                <button>View All</button>
+                <button onClick={handleBtnClick}>View All</button>
             </div>
 
             <Slider {...settings} className="sliderContent">
                 {
                     !loadingStatus ?
                     (charactersData && charactersData.map((data) => {
-                        return <Character data={data} />
-                    })) : <p>Loading...</p>
+                        return <Link to={`/cast/${data.id}`} key={data.id} className="link">
+                            <Character data={data} />
+                        </Link>
+                    })) : <p className="loading">Loading...</p>
                 }
             </Slider>
         </div>

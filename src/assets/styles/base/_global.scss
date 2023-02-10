@@ -1,0 +1,23 @@
+html {
+    // overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'TT Travels';
+    background-color: $primary;
+}
+
+button {
+    font-family: 'TT Travels';
+}
+
+.link, a {
+    text-decoration: none;
+}
+
+.loading {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: normal;
+}

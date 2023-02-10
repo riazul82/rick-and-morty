@@ -8,8 +8,6 @@ const AppContextProvider = ({children}) => {
     const locations = useFetch('https://rickandmortyapi.com/api/location');
     const episodes = useFetch('https://rickandmortyapi.com/api/episode');
 
-    console.log(locations);
-
     return (
         <AppContext.Provider value={{characters, locations, episodes}}>
             {children}

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AppContext } from '../context/AppContextProvider';
 
 import logo from '../assets/images/Logo.svg';
 import bubble from '../assets/images/home/hero_elements/bubble.png';
@@ -9,6 +10,14 @@ import MeetTheCast from '../components/MeetTheCast';
 import List from '../components/List';
 
 const Home = () => {
+    const { locations, episodes } = useContext(AppContext);
+
+    const locationsData = locations[0];
+    const locationsLoader = locations[1];
+
+    const episodesData = episodes[0];
+    const episodesLoader = episodes[1];
+
     return (
         <div className="home">
             <div className="logo">
@@ -51,8 +60,8 @@ const Home = () => {
             </div>
 
             <MeetTheCast />
-            <List title="Episodes" />
-            <List title="Locations" />
+            <List title="Episodes" data={episodesData} loader={episodesLoader} />
+            <List title="Locations" data={locationsData} loader={locationsLoader} />
         </div>
     );
 }

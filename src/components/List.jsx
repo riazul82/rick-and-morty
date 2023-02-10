@@ -8,7 +8,7 @@ import NextBtn from './NextBtn';
 
 import ListCard from './ListCard';
 
-const List = (props) => {
+const List = ({title, data, loader}) => {
     const settings = {
         dots: false,
         infinite: false,
@@ -49,14 +49,16 @@ const List = (props) => {
     return (
         <div className="list" style={{marginTop: '107px'}}>
             <div className="header">
-                <p className="title">{props.title}</p>
+                <p className="title">{title}</p>
             </div>
 
             <Slider {...settings} className="sliderContent">
-                <ListCard />
-                <ListCard />
-                <ListCard />
-                <ListCard />
+                {
+                    !loader ?
+                    (data && data.map((data) => {
+                        return <ListCard data={data} key={data.id} title={title.toLowerCase()} />
+                    })) : <p className="loading">Loading...</p>
+                }
             </Slider>
         </div>
     );
