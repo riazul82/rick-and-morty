@@ -4,12 +4,13 @@
     height: auto;
     background: url('../../images/cast/background.png');
     background-size: cover;
+    background-position: center;
     padding-bottom: 156px;
 
     .castContent {
         margin: 0 auto;
         margin-top: 110px;
-        width: 1440px;
+        width: 1720px;
 
         .castTitle {
             h1 {
@@ -22,6 +23,7 @@
         .castCharacters {
             margin-top: 40px;
             display: grid;
+            width: 100%;
             grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
             grid-gap: 67px;
         }
@@ -38,4 +40,73 @@
         background-size: contain;
         background-repeat: no-repeat;
     }
+}
+
+@media screen and (max-width: 1740px) {
+    .cast {
+        padding: 0 32px 156px 32px;
+
+        .castContent {
+            width: 100%;
+        }
+    }    
+}
+
+@media screen and (max-width: 720px) {
+    .cast {
+        padding: 0 24px 156px 24px;
+
+        .castContent {
+            .castTitle {
+                h1 {
+                    font-size: 50px;
+                }
+            }
+
+            .castCharacters {
+                grid-gap: 30px;
+            }
+        }
+    }    
+}
+
+@media screen and (max-width: 660px) {
+    .cast {
+        .castContent {
+            .castTitle {
+                h1 {
+                    font-size: 40px;
+                }
+            }
+
+            .castCharacters {
+                grid-template-columns: repeat(auto-fit, minmax(176px, 1fr));
+            }
+        }
+    }    
+}
+
+@media screen and (max-width: 440px) {
+    .cast {
+        background: url('../../images/home/backgrounds/background.png');
+        background-size: cover;
+        background-position-x: 80%;
+        background-attachment: fixed;
+        padding-bottom: 114px;
+
+        .castContent {
+            margin-top: 68px;
+
+            .castTitle {
+                h1 {
+                    font-size: 16px;
+                }
+            }
+
+            .castCharacters {
+                margin-top: 28px;
+                grid-template-columns: repeat(auto-fit, minmax(134px, 1fr));
+            }
+        }
+    }    
 }

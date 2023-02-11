@@ -13,7 +13,7 @@ const TheCast = () => {
 
     return (
         <div className="cast">
-            <div className="logo">
+            <div className="logo castLogo">
                 <img src={logo} alt="logo" />
             </div>
 
