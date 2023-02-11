@@ -21,34 +21,37 @@ const MeetTheCast = () => {
         dots: false,
         infinite: false,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow: 5,
         slidesToScroll: 1,
         initialSlide: 0,
         prevArrow: <PrevBtn/>,
         nextArrow: <NextBtn/>,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1580,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    infinite: false,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 1280,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
+                    slidesToScroll: 1,
+                    infinite: false,
+                    dots: false
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 1024,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2,
-                    initialSlide: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    infinite: false,
+                    dots: false
                 }
             }
         ]
@@ -59,7 +62,7 @@ const MeetTheCast = () => {
     }
 
     return (
-        <div className="list" style={{marginTop: '100px'}}>
+        <div className="list meetTheCast">
             <div className="header">
                 <p className="title">Meet the cast</p>
                 <button onClick={handleBtnClick}>View All</button>

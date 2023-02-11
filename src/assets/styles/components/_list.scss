@@ -1,10 +1,12 @@
 .list {
     margin: 0 auto;
-    width: 1420px;
+    padding-top: 107px;
+    width: 1770px;
 
     .header {
         display: flex;
         width: 100%;
+        align-items: center;
         justify-content: space-between;
 
         .title {
@@ -28,5 +30,48 @@
 
     .sliderContent {
         margin-top: 36px;
+    }
+}
+
+@media screen and (max-width: 1820px) {
+    .list {
+        padding: 107px 32px 0 32px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .list {
+        padding: 32px 32px 0 32px;
+
+        .header {
+            .title {
+                font-size: 20px;
+            }
+    
+            button {
+                padding: 8px 20px;
+                font-size: 14px;
+            }
+        }
+    
+        .sliderContent {
+            margin-top: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .list {
+        .header {
+            .title {
+                font-size: 16px;
+            }
+    
+            button {
+                padding: 6px 16px;
+                font-size: 10px;
+            }
+        }
     }
 }

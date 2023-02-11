@@ -1,6 +1,11 @@
 .characterBox {
     position: relative;
 
+    .cardLayout {
+        width: 290px;
+        height: 296px;
+    }
+
     .characterBoxContent {
         padding: 16px;
         position: absolute;
@@ -28,6 +33,58 @@
                 color: #fff;
                 font-size: 16px;
                 font-weight: 500;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .characterBox {
+        .cardLayout {
+            width: 200px;
+            height: 204px;
+        }
+    
+        .characterBoxContent {
+            padding: 12px;
+    
+            .image {
+                height: 150px;
+                width: 176px;
+            }
+    
+            .text {
+                margin-top: 12px;
+    
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .characterBox {
+        .cardLayout {
+            width: 134px;
+            height: 138px;
+        }
+    
+        .characterBoxContent {
+            padding: 8px;
+    
+            .image {
+                height: 100px;
+                width: 118px;
+            }
+    
+            .text {
+                margin-top: 10px;
+    
+                p {
+                    font-size: 10px;
+                }
             }
         }
     }

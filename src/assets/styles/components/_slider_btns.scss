@@ -7,6 +7,9 @@
     justify-content: center;
     background: #fff;
     border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
     z-index: 999;
 
     .arrowIcon {
@@ -25,4 +28,32 @@
 
 .slick-prev::before, .slick-next::before {
     display: none;
+}
+
+@media screen and (max-width: 660px) {
+    .slick-arrow.slick-prev,
+    .slick-arrow.slick-next {
+        height: 40px;
+        width: 40px;
+
+        .arrowIcon {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .slick-arrow.slick-prev,
+    .slick-arrow.slick-next {
+        height: 32px;
+        width: 32px;
+
+        .arrowIcon {
+            font-size: 1rem;
+        }
+
+        .arrowLeft {
+            margin-right: 2px;
+        }
+    }
 }
