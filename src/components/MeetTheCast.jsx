@@ -24,8 +24,8 @@ const MeetTheCast = () => {
         slidesToShow: 5,
         slidesToScroll: 1,
         initialSlide: 0,
-        prevArrow: <PrevBtn/>,
-        nextArrow: <NextBtn/>,
+        prevArrow: <PrevBtn type="cast"/>,
+        nextArrow: <NextBtn type="cast"/>,
         responsive: [
             {
                 breakpoint: 1580,
@@ -65,6 +65,14 @@ const MeetTheCast = () => {
         <div className="list meetTheCast">
             <div className="header">
                 <p className="title">Meet the cast</p>
+                <div className="arrowIcons">
+                    <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.05 6.364L8 11.314L6.586 12.728L0.222 6.364L6.586 -6.18079e-08L8 1.414L3.05 6.364Z" fill="#15BFFD"/>
+                    </svg>
+                    <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.95 6.364L4.94551e-07 11.314L1.414 12.728L7.778 6.364L1.414 -6.18079e-08L6.18079e-08 1.414L4.95 6.364Z" fill="#15BFFD"/>
+                    </svg>
+                </div>
                 <button onClick={handleBtnClick}>View All</button>
             </div>
 
