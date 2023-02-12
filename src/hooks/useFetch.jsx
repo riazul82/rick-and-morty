@@ -13,7 +13,11 @@ const useFetch = (url) => {
             return res.json();
         })
         .then((data) => {
-            setData(data.results);
+            if (data.results) {
+                setData(data.results);
+            } else {
+                setData(data);
+            }
             setLoader(false);
         })
         .catch((err) => {
