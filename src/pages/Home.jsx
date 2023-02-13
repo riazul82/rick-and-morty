@@ -6,10 +6,10 @@ import MeetTheCast from '../components/MeetTheCast';
 import List from '../components/List';
 
 // images
-import logo from '../assets/images/logo.svg';
+import logo from '../assets/images/Logo.svg';
 import bubble from '../assets/images/home/hero_elements/bubble.png';
 import portal from '../assets/images/home/hero_elements/portal.svg';
-import gun from '../assets/images/home/hero_elements/gun.svg';
+import gun from '../assets/images/home/hero_elements/Gun.svg';
 
 const Home = () => {
     const { locations, episodes } = useContext(AppContext);

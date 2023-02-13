@@ -6,7 +6,7 @@ import useFetch from '../hooks/useFetch';
 import useMultiFetch from '../hooks/useMultiFetch';
 
 // images
-import logo from '../assets/images/logo.svg';
+import logo from '../assets/images/Logo.svg';
 import statusIcon from '../assets/images/cast_details/Icons/status.svg';
 import speciesIcon from '../assets/images/cast_details/Icons/species.svg';
 import genderIcon from '../assets/images/cast_details/Icons/gender.svg';
