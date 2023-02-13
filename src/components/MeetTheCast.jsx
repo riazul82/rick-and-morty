@@ -2,13 +2,15 @@ import React, { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AppContext } from '../context/AppContextProvider';
 
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
+// components
 import Character from './Character';
 import PrevBtn from './PrevBtn';
 import NextBtn from './NextBtn';
+
+// slick slider
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const MeetTheCast = () => {
     const { characters } = useContext(AppContext);

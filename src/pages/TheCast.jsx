@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 
 import { AppContext } from '../context/AppContextProvider';
 import Character from '../components/Character';
-import logo from '../assets/images/Logo.svg';
+
+import logo from '../assets/images/logo.svg';
 
 const TheCast = () => {
     const { characters } = useContext(AppContext);

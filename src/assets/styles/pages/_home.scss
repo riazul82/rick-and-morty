@@ -14,14 +14,14 @@
             margin-top: 26px;
             height: 511px;
             width: 1476px;
-    
+
             .elements {
                 position: absolute;
                 top: 0;
                 left: 0;
                 height: 100%;
                 width: 100%;
-    
+
                 #bubble {
                     position: absolute;
                     top: 20px;
@@ -30,7 +30,7 @@
                     width: 270px;
                     z-index: 99;
                 }
-        
+
                 #portal {
                     position: absolute;
                     top: 103px;
@@ -38,7 +38,7 @@
                     height: 145px;
                     width: 225px;
                 }
-        
+
                 #gun {
                     position: absolute;
                     bottom: 0;
@@ -47,36 +47,36 @@
                     width: 319px;
                 }
             }
-    
+
             .headerTitle {
                 position: absolute;
                 top: 129px;
                 left: 154px;
                 height: 308px;
                 width: 1075px;
-    
+
                 h1 {
                     font-size: 128px;
                     font-weight: 800;
                     text-transform: uppercase;
-    
+
                     .italic {
                         color: #eee;
                         font-style: italic;
                     }
                 }
-    
+
                 h1.headerTitleTop {
                     position: relative;
                     display: flex;
                     justify-content: space-between;
-    
+
                     .gradient {
                         background: linear-gradient(45deg, $green, $blue, $blue);
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
                     }
-    
+
                     &::before {
                         position: absolute;
                         top: 50%;
@@ -85,11 +85,11 @@
                         content: '';
                         height: 110%;
                         width: 110%;
-                        background: url('../../images/home/hero_elements/Glow.svg');
+                        background: url('../../images/home/hero_elements/glow.svg');
                         background-size: contain;
                     }
                 }
-    
+
                 h1.headerTitleBottom {
                     .gradient {
                         background: linear-gradient(45deg, $green, $green, $blue);
@@ -97,7 +97,7 @@
                         -webkit-text-fill-color: transparent;
                     }
                 }
-    
+
                 &::before {
                     position: absolute;
                     content: '';
@@ -109,7 +109,7 @@
                     border-radius: 50px;
                 }
             }
-    
+
             .headingBottom {
                 margin-top: 16px;
                 position: absolute;
@@ -118,7 +118,7 @@
                 transform: translateX(-42%);
                 display: flex;
                 align-items: center;
-    
+
                 button {
                     display: flex;
                     height: 58px;
@@ -131,7 +131,7 @@
                     outline: none;
                     cursor: pointer;
                     background: linear-gradient(120deg, $green, $blue);
-                    
+
                     .vectorIcon {
                         width: 20px;
                         height: 20px;
@@ -143,10 +143,10 @@
                         font-weight: 500;
                     }
                 }
-    
+
                 .headingBottomText {
                     margin-left: 89px;
-    
+
                     p {
                         color: $blue;
                         font-size: 14px;
@@ -202,14 +202,14 @@
                         height: 220px;
                         width: 220px;
                     }
-            
+
                     #portal {
                         top: 103px;
                         left: 230px;
                         height: 120px;
                         width: 180px;
                     }
-            
+
                     #gun {
                         bottom: 40px;
                         right: -136px;
@@ -217,11 +217,11 @@
                         width: 270px;
                     }
                 }
-        
+
                 .headerTitle {
                     width: 820px;
                     left: 0;
-        
+
                     h1 {
                         font-size: 100px;
                     }
@@ -248,7 +248,7 @@
 
         .homeTopSide {
             background: none;
-    
+
             .headingContainer {
                 margin-top: 10px;
                 width: 680px;
@@ -261,14 +261,14 @@
                         height: 220px;
                         width: 220px;
                     }
-            
+
                     #portal {
                         top: 105px;
                         left: 180px;
                         height: 100px;
                         width: 160px;
                     }
-            
+
                     #gun {
                         bottom: 0px;
                         right: -160px;
@@ -276,23 +276,23 @@
                         width: 270px;
                     }
                 }
-        
+
                 .headerTitle {
                     width: 660px;
                     left: 0;
-        
+
                     h1 {
                         font-size: 80px;
                     }
                 }
             }
         }
-    
+
         .homeBottomSide {
             &::before {
                 background: none;
             }
-    
+
             &::after {
                 background: none;
             }
@@ -314,14 +314,14 @@
                         height: 160px;
                         width: 160px;
                     }
-            
+
                     #portal {
                         top: 112px;
                         left: 160px;
                         height: 80px;
                         width: 130px;
                     }
-            
+
                     #gun {
                         bottom: 20px;
                         right: -150px;
@@ -329,12 +329,12 @@
                         width: 220px;
                     }
                 }
-        
+
                 .headerTitle {
                     top: 129px;
                     left: 0;
                     width: 570px;
-        
+
                     h1 {
                         font-size: 70px;
                     }
@@ -344,21 +344,21 @@
                     button {
                         height: 50px;
                         width: 180px;
-                        
+
                         .vectorIcon {
                             width: 18px;
                             height: 18px;
                         }
-    
+
                         span {
                             margin-left: 8px;
                             font-size: 18px;
                         }
                     }
-        
+
                     .headingBottomText {
                         margin-left: 40px;
-        
+
                         p {
                             font-size: 12px;
                         }
@@ -384,14 +384,14 @@
                         height: 110px;
                         width: 110px;
                     }
-            
+
                     #portal {
                         top: 86px;
                         left: 106px;
                         height: 60px;
                         width: 105px;
                     }
-            
+
                     #gun {
                         bottom: 14px;
                         right: -110px;
@@ -399,12 +399,12 @@
                         width: 170px;
                     }
                 }
-        
+
                 .headerTitle {
                     top: 100px;
                     left: 0;
                     width: 400px;
-        
+
                     h1 {
                         font-size: 48px;
                     }
@@ -421,7 +421,7 @@
                     button {
                         height: 36px;
                         width: 126px;
-                        
+
                         .vectorIcon {
                             height: 15px;
                             width: 15px;
@@ -432,10 +432,10 @@
                             font-size: 12px;
                         }
                     }
-        
+
                     .headingBottomText {
                         margin-left: 30px;
-        
+
                         p {
                             font-size: 10px;
                         }
@@ -460,14 +460,14 @@
                         height: 78px;
                         width: 78px;
                     }
-            
+
                     #portal {
                         top: 30px;
                         left: 120px;
                         height: 44px;
                         width: 70px;
                     }
-            
+
                     #gun {
                         bottom: 3.8rem;
                         right: -3.3rem;
@@ -475,12 +475,12 @@
                         width: 140px;
                     }
                 }
-        
+
                 .headerTitle {
                     top: 40px;
                     left: 32px;
                     width: 330px;
-        
+
                     h1 {
                         font-size: 40px;
                     }
@@ -489,18 +489,18 @@
                         display: none;
                     }
                 }
-        
+
                 .headingBottom {
                     margin-top: 0;
                     padding-left: 32px;
                     flex-direction: column-reverse;
                     align-items: flex-start;
                     width: 100%;
-        
+
                     button {
                         margin-top: 32px;
                     }
-        
+
                     .headingBottomText {
                         margin-left: 0;
                     }

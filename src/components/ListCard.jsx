@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ListCard = ({data, title}) => {
+const ListCard = ({ data, title }) => {
     return (
         <div className="itemBox">
             <svg className="cardItemLayout" viewBox="0 0 360 96" fill="none" xmlns="http://www.w3.org/2000/svg">

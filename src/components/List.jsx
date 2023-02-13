@@ -1,14 +1,16 @@
 import React from 'react';
+
+// components
+import PrevBtn from './PrevBtn';
+import NextBtn from './NextBtn';
+import ListCard from './ListCard';
+
+// slick slider
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import PrevBtn from './PrevBtn';
-import NextBtn from './NextBtn';
-
-import ListCard from './ListCard';
-
-const List = ({title, data, loader}) => {
+const List = ({ title, data, loader }) => {
     const settings = {
         dots: false,
         infinite: false,

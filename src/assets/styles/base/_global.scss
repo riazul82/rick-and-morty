@@ -20,3 +20,31 @@ button {
     font-size: 1.2rem;
     font-weight: normal;
 }
+
+.logo {
+    margin: 0 auto;
+    padding-top: 58px;
+    height: auto;
+    width: 227px;
+
+    img {
+        height: 48px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .logo {
+        width: 133px;
+        padding-top: 52px;
+
+        img {
+            height: 28px;
+        }
+    }
+
+    .logo.castLogo {
+        padding-top: 46px;
+    }
+}

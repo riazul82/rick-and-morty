@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+
 import App from './App';
+import AppContextProvider from './context/AppContextProvider';
 
 // fonts
 import './assets/fonts/TTTravels-Thin.ttf';
@@ -13,7 +15,6 @@ import './assets/fonts/TTTravels-Bold.ttf';
 import './assets/fonts/TTTravels-ExtraBold.ttf';
 import './assets/fonts/TTTravels-ExtraBoldItalic.ttf';
 import './assets/fonts/TTTravels-Black.ttf';
-import AppContextProvider from './context/AppContextProvider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

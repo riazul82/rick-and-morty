@@ -1,14 +1,16 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './App.scss';
 
 // pages
 import Home from './pages/Home';
-import Error404 from './pages/Error404';
-
-import ScrollToTop from './effects/ScrollToTop';
 import TheCast from './pages/TheCast';
 import CastDetails from './pages/CastDetails';
+import Error404 from './pages/Error404';
+
+// effects
+import ScrollToTop from './effects/ScrollToTop';
+
+import './App.scss';
 
 const App = () => {
   return (

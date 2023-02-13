@@ -25,7 +25,7 @@
             top: 50%;
             left: -8%;
             transform: translate(-50%) rotate(-90deg);
-    
+
             h1 {
                 font-size: 100px;
                 font-weight: 800;
@@ -161,13 +161,13 @@
                     &::-webkit-scrollbar {
                         width: 6px;
                     }
-                    
+
                     /* Track */
                     &::-webkit-scrollbar-track {
                         background: #393E4F;
                         border-radius: 8px;
                     }
-                    
+
                     /* Handle */
                     &::-webkit-scrollbar-thumb {
                         background: $blue;
@@ -239,7 +239,7 @@
             .seperator {
                 display: none;
             }
-    
+
             .castDetailsRight {
                 margin-top: 40px;
             }
@@ -266,13 +266,13 @@
                 .castName {
                     font-size: 38px;
                 }
-    
+
                 .profileImageBox {
                     .profileImageLayout {
                         height: 300px;
                         width: 290px;
                     }
-    
+
                     .profileImage {
                         top: 40px;
                         left: 34px;
@@ -281,7 +281,7 @@
                     }
                 }
             }
-    
+
             .castDetailsRight {
                 .detailsCard {
                     margin-bottom: 18px;
@@ -289,25 +289,25 @@
                     width: 545px;
                     height: 120px;
                     justify-content: center;
-    
+
                     .cardInfo {
                         padding: 14px 0 0 22px;
-    
+
                         .cardIcon {
                             height: 28px;
                             width: 28px;
                         }
-    
+
                         .cardAttr {
                             margin-top: 6px;
                             font-size: 16px;
                         }
-    
+
                         .cardValue {
                             margin-top: 6px;
                             font-size: 24px;
                         }
-    
+
                         .cardIconLink {
                             bottom: 18px;
                             right: 18px;
@@ -316,21 +316,21 @@
                         }
                     }
                 }
-    
+
                 .rightBottomCard {
                     height: 285px;
-    
+
                     .rightBottomCardInfo {
                         &::-webkit-scrollbar {
                             width: 0;
                         }
-    
+
                         .cardIcon {
                             margin-top: 0;
                         }
                     }
                 }
-    
+
                 .rightTopCards {
                     .rightTopCard {
                         width: 166px;
@@ -352,7 +352,7 @@
         .logo {
             width: 133px;
             padding-top: 46px;
-        
+
             img {
                 height: 28px;
             }
@@ -365,22 +365,26 @@
                 .castName {
                     font-size: 24px;
                 }
-    
+
                 .profileImageBox {
                     .profileImageLayout {
                         height: 240px;
                         width: 240px;
                     }
-    
+
                     .profileImage {
                         top: 30px;
                         left: 30px;
                         height: 180px;
                         width: 180px;
+
+                        img {
+                            border-radius: 4.8px;
+                        }
                     }
                 }
             }
-    
+
             .castDetailsRight {
                 margin-top: 18px;
 
@@ -388,25 +392,25 @@
                     margin-bottom: 16px;
                     width: 348px;
                     height: 76px;
-    
+
                     .cardInfo {
                         padding: 7px 0 0 14px;
-    
+
                         .cardIcon {
                             height: 20px;
                             width: 20px;
                         }
-    
+
                         .cardAttr {
                             margin-top: 6px;
                             font-size: 9px;
                         }
-    
+
                         .cardValue {
                             margin-top: 6px;
                             font-size: 18px;
                         }
-    
+
                         .cardIconLink {
                             bottom: 12px;
                             right: 18px;
@@ -415,17 +419,17 @@
                         }
                     }
                 }
-    
+
                 .rightBottomCard {
                     height: 182px;
-    
+
                     .rightBottomCardInfo {
                         ul {
                             margin: 16px 0 20px 26px;
                         }
                     }
                 }
-    
+
                 .rightTopCards {
                     .rightTopCard {
                         width: 104px;

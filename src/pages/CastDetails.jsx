@@ -1,16 +1,19 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+
+// custom hooks
 import useFetch from '../hooks/useFetch';
 import useMultiFetch from '../hooks/useMultiFetch';
-import logo from '../assets/images/Logo.svg';
 
-import statusIcon from '../assets/images/cast_details/Icons/SVG/status.svg';
-import speciesIcon from '../assets/images/cast_details/Icons/SVG/species.svg';
-import genderIcon from '../assets/images/cast_details/Icons/SVG/gender.svg';
-import originIcon from '../assets/images/cast_details/Icons/SVG/origin.svg';
-import locationIcon from '../assets/images/cast_details/Icons/SVG/location.svg';
-import episodesIcon from '../assets/images/cast_details/Icons/SVG/episodes.svg';
-import redirectIcon from '../assets/images/cast_details/Icons/SVG/redirect.svg';
+// images
+import logo from '../assets/images/logo.svg';
+import statusIcon from '../assets/images/cast_details/Icons/status.svg';
+import speciesIcon from '../assets/images/cast_details/Icons/species.svg';
+import genderIcon from '../assets/images/cast_details/Icons/gender.svg';
+import originIcon from '../assets/images/cast_details/Icons/origin.svg';
+import locationIcon from '../assets/images/cast_details/Icons/location.svg';
+import episodesIcon from '../assets/images/cast_details/Icons/episodes.svg';
+import redirectIcon from '../assets/images/cast_details/Icons/link.svg';
 
 const CastDetails = () => {
     const { id } = useParams();

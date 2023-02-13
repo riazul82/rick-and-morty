@@ -49,7 +49,7 @@
         .castContent {
             width: 100%;
         }
-    }    
+    }
 }
 
 @media screen and (max-width: 720px) {
@@ -67,7 +67,7 @@
                 grid-gap: 30px;
             }
         }
-    }    
+    }
 }
 
 @media screen and (max-width: 660px) {
@@ -83,7 +83,7 @@
                 grid-template-columns: repeat(auto-fit, minmax(176px, 1fr));
             }
         }
-    }    
+    }
 }
 
 @media screen and (max-width: 440px) {
@@ -108,5 +108,5 @@
                 grid-template-columns: repeat(auto-fit, minmax(134px, 1fr));
             }
         }
-    }    
+    }
 }

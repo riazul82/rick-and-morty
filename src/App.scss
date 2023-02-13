@@ -1,11 +1,17 @@
+// utils
 @import './assets/styles/utils/variables';
+
+// base
 @import './assets/styles/base/reset';
 @import './assets/styles/base/global';
 @import './assets/styles/base/typography';
-@import './assets/styles/utils/logo';
+
+// pages
 @import './assets/styles/pages/home';
 @import './assets/styles/pages/cast';
 @import './assets/styles/pages/cast_details';
+
+// components
 @import './assets/styles/components/list';
 @import './assets/styles/components/meet_the_cast';
 @import './assets/styles/components/character';
