@@ -6,7 +6,7 @@ const NextBtn = (props) => {
     const slidesPerScreen = useRef(4);
 
     useEffect(() => {
-        const screenWidth = window.screen.width;
+        const screenWidth = window.innerWidth;
 
         if (props.type === 'cast') {
             if (screenWidth > 1580) {
