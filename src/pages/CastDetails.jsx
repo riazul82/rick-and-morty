@@ -10,6 +10,7 @@ import genderIcon from '../assets/images/cast_details/Icons/SVG/gender.svg';
 import originIcon from '../assets/images/cast_details/Icons/SVG/origin.svg';
 import locationIcon from '../assets/images/cast_details/Icons/SVG/location.svg';
 import episodesIcon from '../assets/images/cast_details/Icons/SVG/episodes.svg';
+import redirectIcon from '../assets/images/cast_details/Icons/SVG/redirect.svg';
 
 const CastDetails = () => {
     const { id } = useParams();
@@ -37,7 +38,7 @@ const CastDetails = () => {
 
     return (
         <div className="castDetails">
-            <div className="logo">
+            <div className="logo castLogo">
                 <img src={logo} alt="logo" />
             </div>
 
@@ -48,7 +49,7 @@ const CastDetails = () => {
                 <div className="castDetailsLeft">
                     <h1 className="castName">{name}</h1>
                     <div className="profileImageBox">
-                        <svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg className="profileImageLayout" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="400" height="400" rx="8" fill="white" fillOpacity="0.05"/>
                             <rect x="0.5" y="0.5" width="399" height="399" rx="7.5" stroke="url(#paint0_linear_1_3089)" strokeOpacity="0.7"/>
                             <defs>
@@ -80,7 +81,7 @@ const CastDetails = () => {
                 <div className="castDetailsRight">
                     <div className="rightTopCards">
                         <div className="detailsCard rightTopCard">
-                            <svg width="240" height="174" viewBox="0 0 240 174" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg className="rightTopCardLayout" viewBox="0 0 240 174" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="240" height="174" rx="8" fill="white" fillOpacity="0.05"/>
                                 <rect x="0.5" y="0.5" width="239" height="173" rx="7.5" stroke="url(#paint0_linear_1_3082)" strokeOpacity="0.7"/>
                                 <defs>
@@ -100,7 +101,7 @@ const CastDetails = () => {
                         </div>
 
                         <div className="detailsCard rightTopCard">
-                            <svg width="240" height="174" viewBox="0 0 240 174" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg className="rightTopCardLayout" viewBox="0 0 240 174" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="240" height="174" rx="8" fill="white" fillOpacity="0.05"/>
                                 <rect x="0.5" y="0.5" width="239" height="173" rx="7.5" stroke="url(#paint0_linear_1_3082)" strokeOpacity="0.7"/>
                                 <defs>
@@ -120,7 +121,7 @@ const CastDetails = () => {
                         </div>
 
                         <div className="detailsCard rightTopCard">
-                            <svg width="240" height="174" viewBox="0 0 240 174" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg className="rightTopCardLayout" viewBox="0 0 240 174" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="240" height="174" rx="8" fill="white" fillOpacity="0.05"/>
                                 <rect x="0.5" y="0.5" width="239" height="173" rx="7.5" stroke="url(#paint0_linear_1_3082)" strokeOpacity="0.7"/>
                                 <defs>
@@ -141,7 +142,7 @@ const CastDetails = () => {
                     </div>
 
                     <div className="detailsCard">
-                        <svg width="800" height="174" viewBox="0 0 800 174" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg className="detailsCardLayout" viewBox="0 0 800 174" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="800" height="174" rx="8" fill="white" fillOpacity="0.05"/>
                             <rect x="0.5" y="0.5" width="799" height="173" rx="7.5" stroke="url(#paint0_linear_1_3064)" strokeOpacity="0.7"/>
                             <defs>
@@ -158,12 +159,14 @@ const CastDetails = () => {
                             </div>
                             <p className="cardAttr">Origin</p>
                             <p className="cardValue">{origin.name}</p>
-                            <div className="cardIconLink"></div>
+                            <a href="/" className="cardIconLink">
+                                <img src={redirectIcon} alt="link-icon" />
+                            </a>
                         </div>
                     </div>
 
                     <div className="detailsCard">
-                        <svg width="800" height="174" viewBox="0 0 800 174" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg className="detailsCardLayout" viewBox="0 0 800 174" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="800" height="174" rx="8" fill="white" fillOpacity="0.05"/>
                             <rect x="0.5" y="0.5" width="799" height="173" rx="7.5" stroke="url(#paint0_linear_1_3064)" strokeOpacity="0.7"/>
                             <defs>
@@ -180,12 +183,14 @@ const CastDetails = () => {
                             </div>
                             <p className="cardAttr">Last Known Location</p>
                             <p className="cardValue">{location.name}</p>
-                            <div className="cardIconLink"></div>
+                            <a href="/" className="cardIconLink">
+                                <img src={redirectIcon} alt="link-icon" />
+                            </a>
                         </div>
                     </div>
 
                     <div className="detailsCard rightBottomCard">
-                        <svg width="800" height="417" viewBox="0 0 800 417" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg className="rightBottomCardLayout" viewBox="0 0 800 417" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="800" height="417" rx="8" fill="white" fillOpacity="0.05"/>
                             <rect x="0.5" y="0.5" width="799" height="416" rx="7.5" stroke="url(#paint0_linear_1_3043)" strokeOpacity="0.7"/>
                             <defs>
