@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { AppContext } from '../context/AppContextProvider';
 
 // components
@@ -82,9 +82,7 @@ const MeetTheCast = () => {
                 {
                     !loadingStatus ?
                     (charactersData && charactersData.map((data) => {
-                        return <Link to={`/cast/${data.id}`} key={data.id} className="link">
-                            <Character data={data} />
-                        </Link>
+                        return <Character key={data.id} data={data} />
                     })) : <p className="loading">Loading...</p>
                 }
             </Slider>
