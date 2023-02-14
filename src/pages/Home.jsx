@@ -55,9 +55,9 @@ const Home = () => {
                         </button>
 
                         <div className="headingBottomText">
-                            <p>Brilliant but boozy scientist Rick hijacks his fretful </p>
-                            <p>teenage grandson, Morty, for wild escapades </p>
-                            <p>in other worlds and alternate dimensions.</p>
+                            <p>Brilliant but boozy scientist Rick hijacks his fretful <br/>
+                            teenage grandson, Morty, for wild escapades <br/>
+                            in other worlds and alternate dimensions.</p>
                         </div>
                     </div>
                 </div>
