@@ -27,6 +27,9 @@ const TheCast = () => {
                     {
                         !loadingStatus ?
                         (charactersData && charactersData.map((data) => {
+                            if (data.name === 'Summer Smith' || data.name === 'Beth Smith' || data.name === 'Annie' || data.name === 'Abadango Cluster Princess') {
+                                return null;
+                            }
                             return <Link to={`/cast/${data.id}`} key={data.id} className="link">
                                 <Character data={data} />
                             </Link>

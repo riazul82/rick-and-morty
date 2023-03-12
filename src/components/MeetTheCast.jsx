@@ -82,6 +82,9 @@ const MeetTheCast = () => {
                 {
                     !loadingStatus ?
                     (charactersData && charactersData.map((data) => {
+                        if (data.name === 'Summer Smith' || data.name === 'Beth Smith' || data.name === 'Annie' || data.name === 'Abadango Cluster Princess') {
+                            return null;
+                        }
                         return <Character key={data.id} data={data} />
                     })) : <p className="loading">Loading...</p>
                 }
